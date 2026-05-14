@@ -18,9 +18,9 @@
 #' @export
 #'
 #' @examples
-#' klamath_img <- system.file("extdata", "2017-01-12_S3A_Klamath.tif", package = "HCR")
-#' klamath_sea <- system.file("extdata", "sea_pt.geojson", package = "HCR")
-#' klamath_land <- system.file("extdata", "river_pts.geojson", package = "HCR")
+#' klamath_img <- system.file("extdata", "2017-01-12_S3A_tsm-Klamath.tif", package = "HCR")
+#' klamath_sea <- system.file("extdata", "sea_pt-Klamath.geojson", package = "HCR")
+#' klamath_land <- system.file("extdata", "river_pts-Klamath.geojson", package = "HCR")
 #'
 #' run_hcr(input_tif = klamath_img,
 #'        sea_point = klamath_sea,
@@ -447,7 +447,9 @@ run_hcr <- function(input_tif,
   Closest point: {min_dist_id}")
 
   writeLines(txt, glue::glue("{sub_dir}/results_summary.txt"))
-
+  
+  message(txt)
+  
   return_list <- list(img_id = img_id,
                       lc_paths_df = lc_paths_df,
                       lc_paths_summary_df = lc_paths_summary_df,
