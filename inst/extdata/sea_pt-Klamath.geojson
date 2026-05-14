@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "KlamathRiver_25km-5km-pt10",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6350" } },
+"features": [
+{ "type": "Feature", "properties": { "line_id": 1, "pt_id": 5, "dist_along": 20000.0, "target_point_id": "KlamathRiver_25km-5km-pt10" }, "geometry": { "type": "Point", "coordinates": [ -2296459.363426483236253, 2412124.584803137928247 ] } }
+]
+}
