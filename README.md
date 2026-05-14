@@ -29,11 +29,11 @@ klamath_sea_path <- system.file("extdata", "sea_pt-Klamath.geojson", package = "
 klamath_land_path <- system.file("extdata", "river_pts-Klamath.geojson", package = "HCR")
 
 
-run_hcr(input_tif = klamath_img_path,
+klamath_out <- run_hcr(input_tif = klamath_img_path,
         sea_point = klamath_sea_path,
         land_points = klamath_land_path,
         land_points_id_col = 'pourpoint_id',
         output_dir = 'klamath_out')
-#> --> input tif does not exist, quitting
-#> NULL
+klamath_out$which_maxHCR_filtered
+
 ```
