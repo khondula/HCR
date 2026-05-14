@@ -456,15 +456,15 @@ run_hcr <- function(input_tif,
 
     # save things in output directory
     paths_filepath <- glue::glue('{sub_dir}/least_cost_paths.geojson')
-    lc_paths_sf |> sf::st_write(paths_filepath)
+    lc_paths_sf |> sf::st_write(paths_filepath, quiet = TRUE)
     end_pts_filepath <- glue::glue('{sub_dir}/land_points_adjusted.geojson')
-    end_pts_moved_sf |> sf::st_write(end_pts_filepath)
+    end_pts_moved_sf |> sf::st_write(end_pts_filepath, quiet = TRUE)
     lc_paths_df |> readr::write_csv(glue::glue('{sub_dir}/least_cost_paths_data.csv'))
     lc_paths_summary_df |> readr::write_csv(glue::glue('{sub_dir}/least_cost_paths_summary.csv'))
 
     writeLines(txt, glue::glue("{sub_dir}/results_summary.txt"))
   }
-  message(txt)
+  message(glue::glue('{txt}'))
 
   return_list <- list(img_id = img_id,
                       map_file = map_filename,

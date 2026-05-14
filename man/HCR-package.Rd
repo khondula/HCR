@@ -11,5 +11,10 @@ Uses least cost routing to identify the most connected watershed pour point to a
 \author{
 \strong{Maintainer}: Kelly Hondula \email{khondula@asu.edu}
 
+Authors:
+\itemize{
+  \item Kelly Hondula \email{khondula@asu.edu}
+}
+
 }
 \keyword{internal}
