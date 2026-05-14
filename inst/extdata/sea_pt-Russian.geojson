@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "RussianRiver_25km-5km-pt9",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6350" } },
+"features": [
+{ "type": "Feature", "properties": { "line_id": 1, "pt_id": 9, "dist_along": 40000.0, "target_point_id": "RussianRiver_25km-5km-pt9" }, "geometry": { "type": "Point", "coordinates": [ -2321495.192915384657681, 2050088.242725429590791 ] } }
+]
+}

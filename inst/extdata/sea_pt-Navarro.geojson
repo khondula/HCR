@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "BigRiver_25km-5km-pt5",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::6350" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 5, "target_point_id": "BigRiver_25km-5km-pt5" }, "geometry": { "type": "Point", "coordinates": [ -2347517.686252218671143, 2143367.887817093636841 ] } }
+]
+}

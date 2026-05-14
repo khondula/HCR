@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "russian_0056",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "rowid": 56, "date": "2007-05-28", "depth_m": 4.6, "dataset_id": 24.0, "t_C": 9.111, "sal_pss": 33.96, "pH_total": null, "tCO2_umolkg": 2096.7, "ta_umolkg": 2274.4, "do_umolkg": 291.4, "chl_ugL": null, "si_umolkg": 17.58, "nh4_umolkg": null, "no3_umolkg": 11.57, "no2_umolkg": 0.19, "po3_umolkg": 1.06, "distance_offshore": 4.2290549012418204, "alk_id": "alk_0056" }, "geometry": { "type": "Point", "coordinates": [ -123.25, 38.47 ] } }
+]
+}
