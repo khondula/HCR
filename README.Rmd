@@ -49,13 +49,3 @@ klamath_out <- run_hcr(input_tif = klamath_img_path,
 # most connected site
 klamath_out$which_maxHCR_filtered
 ```
-
-```{r echo=FALSE, out.width='100%'}
-map_file <- as.character(klamath_out$map_file)
-knitr::include_graphics(map_file)
-```
-
-```{r echo=FALSE, out.width='100%'}
-# klamath_out$paths_plot
-```
-

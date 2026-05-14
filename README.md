@@ -39,8 +39,8 @@ klamath_out <- run_hcr(input_tif = klamath_img_path,
 #> ...preparing raster to make cost surface
 #> ...extracting values from least cost paths
 #> ...testing paths for mann kendall
-#> connected path to KlamathRiver_25km-ppt11_Klamath River (max: 0.86)
-#> .....now saving results in /Users/khondula/Documents/software/HCR/HCRout_klamath_out_2017-01-12_S3A_tsm-Klamath_20260214000219
+#> connected path to KlamathRiver_25km-ppt11_Klamath River (tau: 0.86)
+#> .....now saving results in /Users/khondula/Documents/software/HCR/HCRout_klamath_out_2017-01-12_S3A_tsm-Klamath_20261014001037
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" /><img src="man/figures/README-example-2.png" width="100%" />
