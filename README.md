@@ -14,14 +14,26 @@ Code for implementing hydrologic connectivity to rivers.
 You can install the development version of HCR like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+library(devtools)
+devtools::install_github('khondula/HCR')
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example to calculate HCR:
 
 ``` r
 library(HCR)
-## basic example code
+klamath_img_path <- system.file("extdata", "2017-01-12_S3A_Klamath.tif", package = "HCR")
+klamath_sea_path <- system.file("extdata", "sea_pt.geojson", package = "HCR")
+klamath_land_path <- system.file("extdata", "river_pts.geojson", package = "HCR")
+
+
+run_hcr(input_tif = klamath_img_path,
+        sea_point = klamath_sea_path,
+        land_points = klamath_land_path,
+        land_points_id_col = 'pourpoint_id',
+        output_dir = 'klamath_out')
+#> --> input tif does not exist, quitting
+#> NULL
 ```
