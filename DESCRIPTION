@@ -1,0 +1,42 @@
+Package: HCR
+Type: Package
+Title: Calculate Hydrologic Connectivity to Rivers
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Kelly", "Hondula",
+      email = "khondula@asu.edu",
+      role = c("aut", "cre")
+    )
+  )
+Description: Uses least cost routing to identify the most 
+    connected watershed pour point to a point in the coastal
+    zone based on raster representing a river plume.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.0.0
+RoxygenNote: 8.0.0
+Imports: 
+    rlang,
+    methods,
+    Kendall,
+    FNN,
+    terra,
+    raster,
+    sf,
+    tibble,
+    dplyr,
+    tidyselect,
+    purrr,
+    ggplot2,
+    colorspace,
+    glue,
+    readr,
+    scales,
+    tools,
+    fs,
+    gdistance,
+    scico,
+    utils
