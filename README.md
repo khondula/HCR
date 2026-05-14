@@ -4,7 +4,6 @@
 # HCR
 
 <!-- badges: start -->
-
 <!-- badges: end -->
 
 Code for implementing hydrologic connectivity to rivers.
@@ -36,20 +35,20 @@ klamath_out <- run_hcr(input_tif = klamath_img_path,
         land_points_id_col = 'pourpoint_id',
         output_dir = 'klamath_out')
 #> EXP_SCALE_PAR is set as 10
-#> reading in input tif: C:/Users/khondula/AppData/Local/R/win-library/4.5/HCR/extdata/2017-01-12_S3A_tsm-Klamath.tif as img_id: 2017-01-12_S3A_tsm-Klamath
+#> reading in input tif: /Library/Frameworks/R.framework/Versions/4.3-x86_64/Resources/library/HCR/extdata/2017-01-12_S3A_tsm-Klamath.tif as img_id: 2017-01-12_S3A_tsm-Klamath
 #> ...preparing raster to make cost surface
 #> ...extracting values from least cost paths
 #> ...testing paths for mann kendall
 #> connected path to KlamathRiver_25km-ppt11_Klamath River (max: 0.86)
-#> .....now saving results in HCRout_klamath_out_2017-01-12_S3A_tsm-Klamath_20265514025515
-#> Writing layer `least_cost_paths' to data source 
-#>   `HCRout_klamath_out_2017-01-12_S3A_tsm-Klamath_20265514025515/least_cost_paths.geojson' using driver `GeoJSON'
-#> Writing 8 features with 1 fields and geometry type Line String.
-#> Writing layer `land_points_adjusted' to data source 
-#>   `HCRout_klamath_out_2017-01-12_S3A_tsm-Klamath_20265514025515/land_points_adjusted.geojson' using driver `GeoJSON'
-#> Writing 8 features with 17 fields and geometry type Point.
-
-# most connected site
-klamath_out$which_maxHCR_filtered
-#> [1] "KlamathRiver_25km-ppt11_Klamath River"
+#> .....now saving results in /Users/khondula/Documents/software/HCR/HCRout_klamath_out_2017-01-12_S3A_tsm-Klamath_20260214000219
 ```
+
+<img src="man/figures/README-example-1.png" width="100%" /><img src="man/figures/README-example-2.png" width="100%" />
+
+    #> img_id: 2017-01-12_S3A_tsm-Klamath
+    #> Max HCR point: KlamathRiver_25km-ppt11_Klamath River (0.927)
+    #> Closest point: KlamathRiver_25km-ppt4_Damnation Creek
+
+    # most connected site
+    klamath_out$which_maxHCR_filtered
+    #> [1] "KlamathRiver_25km-ppt11_Klamath River"
