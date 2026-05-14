@@ -321,7 +321,7 @@ run_hcr <- function(input_tif,
     message(glue::glue('no least cost paths with connected true pos MK > 0.5 (max: {round(max(paths_summary$mk_tau), 2)})'))
   }
   if(nrow(paths_check>0)){
-    message(glue::glue('connected path to {paths_check$path_id[1]} (max: {round(max(paths_check$mk_tau[1]), 2)})'))
+    message(glue::glue('connected path to {paths_check$path_id[1]} (tau: {round(max(paths_check$mk_tau[1]), 2)})'))
   }
 
   maxHCR_hcr <- NA
