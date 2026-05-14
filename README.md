@@ -24,9 +24,9 @@ This is a basic example to calculate HCR:
 
 ``` r
 library(HCR)
-klamath_img_path <- system.file("extdata", "2017-01-12_S3A_Klamath.tif", package = "HCR")
-klamath_sea_path <- system.file("extdata", "sea_pt.geojson", package = "HCR")
-klamath_land_path <- system.file("extdata", "river_pts.geojson", package = "HCR")
+klamath_img_path <- system.file("extdata", "2017-01-12_S3A_tsm-Klamath.tif", package = "HCR")
+klamath_sea_path <- system.file("extdata", "sea_pt-Klamath.geojson", package = "HCR")
+klamath_land_path <- system.file("extdata", "river_pts-Klamath.geojson", package = "HCR")
 
 
 run_hcr(input_tif = klamath_img_path,
