@@ -9,7 +9,7 @@ run_hcr(
   sea_point,
   land_points,
   land_points_id_col = "pourpoint_id",
-  output_dir,
+  output_dir = ".",
   dist_m = 25000,
   r_min = 0,
   r_max = 200,
