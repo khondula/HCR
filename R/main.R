@@ -32,7 +32,7 @@ run_hcr <- function(input_tif,
                     sea_point,
                     land_points,
                     land_points_id_col = 'pourpoint_id',
-                    output_dir,
+                    output_dir = ".",
                     dist_m = 25000, # max distance for end points from start pont
                     r_min = 0, # scale for cost surface
                     r_max = 200, # scale for cost surface
@@ -92,7 +92,11 @@ run_hcr <- function(input_tif,
     return(NULL)}
 
   # make output directory
-  sub_dir <- glue::glue('{getwd()}/HCRout_{output_dir}_{img_id}_{format(Sys.time(), "%Y%M%d%H%M%S")}')
+  if (!dir.exists(output_dir)) {
+    dir.create(output_dir, recursive = TRUE)
+  }
+
+  sub_dir <- glue::glue('{output_dir}/HCRout_{output_dir}_{img_id}_{format(Sys.time(), "%Y%M%d%H%M%S")}')
   fs::dir_create(sub_dir)
 
   ###########################################################

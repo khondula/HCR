@@ -40,15 +40,11 @@ klamath_out <- run_hcr(input_tif = klamath_img_path,
 #> ...extracting values from least cost paths
 #> ...testing paths for mann kendall
 #> connected path to KlamathRiver_25km-ppt11_Klamath River (tau: 0.86)
-#> .....now saving results in /Users/khondula/Documents/software/HCR/HCRout_klamath_out_2017-01-12_S3A_tsm-Klamath_20261014001037
+#> .....now saving results in /Users/khondula/Documents/software/HCR/HCRout_klamath_out_2017-01-12_S3A_tsm-Klamath_20263414153452
 ```
 
-<img src="man/figures/README-example-1.png" width="100%" /><img src="man/figures/README-example-2.png" width="100%" />
+<img src="man/figures/README-example-1.png" width="50%" /><img src="man/figures/README-example-2.png" width="50%" />
 
     #> img_id: 2017-01-12_S3A_tsm-Klamath
     #> Max HCR point: KlamathRiver_25km-ppt11_Klamath River (0.927)
     #> Closest point: KlamathRiver_25km-ppt4_Damnation Creek
-
-    # most connected site
-    klamath_out$which_maxHCR_filtered
-    #> [1] "KlamathRiver_25km-ppt11_Klamath River"

@@ -9,7 +9,7 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "50%"
 )
 ```
 
@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-Code for implementing hydrologic connectivity to rivers.
+Code for implementing Hydrologic Connectivity to Rivers.
 
 ## Installation
 
@@ -31,6 +31,7 @@ pak::pak("khondula/HCR")
 
 ## Example
 
+Three examples of input datasets are included. 
 This is a basic example to calculate HCR:
 
 ```{r example}
@@ -45,7 +46,4 @@ klamath_out <- run_hcr(input_tif = klamath_img_path,
         land_points = klamath_land_path,
         land_points_id_col = 'pourpoint_id',
         output_dir = 'klamath_out')
-
-# most connected site
-klamath_out$which_maxHCR_filtered
 ```
